@@ -98,6 +98,12 @@ namespace ColdCutsNS
             m_outputFiles.UpdateEndTime(index, ((newEndMin * 60) + newEndSec));
         }
 
+        public void UpdateStartAndEndTimes(int start, int end, int ind)
+        {
+            m_outputFiles.UpdateStartTime(ind, start);
+            m_outputFiles.UpdateEndTime(ind, end);
+        }
+
         public void UpdateInputTags(string fileName, string artist, string title, string album, string comment)
         {
             m_outputFiles[index].tag.artist = artist;

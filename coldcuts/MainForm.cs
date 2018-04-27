@@ -16,6 +16,8 @@ namespace ColdCutsNS
         private TAG_INFO inputFileTags;
         private ImageForm imageForm;
 
+        private bool splittingByStep = false;
+
         public MainForm()
         {
             InitializeComponent();
@@ -86,6 +88,11 @@ namespace ColdCutsNS
 
             if (StartAndEndTimesInDGVAreValid(dataGridView1) && !wasARowJustAddedToDGV)
             {
+                if (splittingByStep)
+                {
+                    return;
+                }
+
                 if (e.GetType() == typeof(DataGridViewCellEventArgs))
                 {
                     int RowIndex = ((DataGridViewCellEventArgs)e).RowIndex;
@@ -278,6 +285,44 @@ namespace ColdCutsNS
                     UpdateTheImageForm();
                 }
             }
+        }
+
+        private void btnSpliByStep_Click(object sender, EventArgs e)
+        {
+            splittingByStep = true;
+
+            //dataGridView1.Rows.Clear();
+
+            int step;
+            if (!int.TryParse(splitStepTextBox.Text, out step)) step = 600;
+            for (int second = 0, index = 0; second < inputFileTags.duration; second += step, index++)
+            {
+                var soundFile = new SoundFile();
+
+                var name = index.ToString().PadLeft(4, '0');
+                int end = second + step;
+                if (end > inputFileTags.duration) end = (int)inputFileTags.duration;
+
+                soundFile.fileName = name;
+                soundFile.startTimeSeconds = second;
+                soundFile.endTimeSeconds = end;
+                addSoundFile(soundFile);
+
+                var soundFiles = outputFiles.GetOutputFiles();
+
+                outputFiles.UpdateStartAndEndTimes(second, end, index);
+
+                soundFiles[index].fileName = name;
+                soundFiles[index].startTimeSeconds = second;
+                soundFiles[index].endTimeSeconds = end;
+
+
+                //var row = dataGridView1.Rows[index];
+                //row.Cells[1].Value = soundFiles[index].fileName;
+                //row.Cells[2].Value = second.ToString();
+                //row.Cells[3].Value = end.ToString();
+            }
+            splittingByStep = false;
         }
     }
 }

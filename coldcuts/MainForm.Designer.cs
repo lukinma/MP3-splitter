@@ -80,6 +80,8 @@
             this.silenceMenuItem = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripMenuItemMinGap = new System.Windows.Forms.ToolStripMenuItem();
             this.minGapMenuItem = new System.Windows.Forms.ToolStripTextBox();
+            this.btnSpliByStep = new System.Windows.Forms.Button();
+            this.splitStepTextBox = new System.Windows.Forms.TextBox();
             this.inputFileGroupbox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -89,9 +91,10 @@
             // 
             // sourceBrowseButton
             // 
-            this.sourceBrowseButton.Location = new System.Drawing.Point(14, 54);
+            this.sourceBrowseButton.Location = new System.Drawing.Point(19, 66);
+            this.sourceBrowseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sourceBrowseButton.Name = "sourceBrowseButton";
-            this.sourceBrowseButton.Size = new System.Drawing.Size(67, 28);
+            this.sourceBrowseButton.Size = new System.Drawing.Size(89, 34);
             this.sourceBrowseButton.TabIndex = 0;
             this.sourceBrowseButton.Text = "Browse...";
             this.sourceBrowseButton.UseVisualStyleBackColor = true;
@@ -99,27 +102,30 @@
             // 
             // sourceFilePathTextBox
             // 
-            this.sourceFilePathTextBox.Location = new System.Drawing.Point(14, 32);
+            this.sourceFilePathTextBox.Location = new System.Drawing.Point(19, 39);
+            this.sourceFilePathTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sourceFilePathTextBox.Name = "sourceFilePathTextBox";
-            this.sourceFilePathTextBox.Size = new System.Drawing.Size(310, 20);
+            this.sourceFilePathTextBox.Size = new System.Drawing.Size(412, 22);
             this.sourceFilePathTextBox.TabIndex = 2;
             this.sourceFilePathTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sourceFilePathTextBox_KeyPress);
             // 
             // sourceLabel
             // 
             this.sourceLabel.AutoSize = true;
-            this.sourceLabel.Location = new System.Drawing.Point(12, 15);
+            this.sourceLabel.Location = new System.Drawing.Point(16, 18);
+            this.sourceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sourceLabel.Name = "sourceLabel";
-            this.sourceLabel.Size = new System.Drawing.Size(71, 13);
+            this.sourceLabel.Size = new System.Drawing.Size(93, 17);
             this.sourceLabel.TabIndex = 3;
             this.sourceLabel.Text = "Source path: ";
             // 
             // destinationBrowseButton
             // 
             this.destinationBrowseButton.Enabled = false;
-            this.destinationBrowseButton.Location = new System.Drawing.Point(13, 136);
+            this.destinationBrowseButton.Location = new System.Drawing.Point(17, 167);
+            this.destinationBrowseButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.destinationBrowseButton.Name = "destinationBrowseButton";
-            this.destinationBrowseButton.Size = new System.Drawing.Size(67, 28);
+            this.destinationBrowseButton.Size = new System.Drawing.Size(89, 34);
             this.destinationBrowseButton.TabIndex = 4;
             this.destinationBrowseButton.Text = "Browse...";
             this.destinationBrowseButton.UseVisualStyleBackColor = true;
@@ -128,18 +134,20 @@
             // destinationLabel
             // 
             this.destinationLabel.AutoSize = true;
-            this.destinationLabel.Location = new System.Drawing.Point(11, 98);
+            this.destinationLabel.Location = new System.Drawing.Point(15, 121);
+            this.destinationLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.destinationLabel.Name = "destinationLabel";
-            this.destinationLabel.Size = new System.Drawing.Size(90, 13);
+            this.destinationLabel.Size = new System.Drawing.Size(119, 17);
             this.destinationLabel.TabIndex = 5;
             this.destinationLabel.Text = "Destination path: ";
             // 
             // destinationFilePathTextBox
             // 
             this.destinationFilePathTextBox.Enabled = false;
-            this.destinationFilePathTextBox.Location = new System.Drawing.Point(13, 114);
+            this.destinationFilePathTextBox.Location = new System.Drawing.Point(17, 140);
+            this.destinationFilePathTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.destinationFilePathTextBox.Name = "destinationFilePathTextBox";
-            this.destinationFilePathTextBox.Size = new System.Drawing.Size(310, 20);
+            this.destinationFilePathTextBox.Size = new System.Drawing.Size(412, 22);
             this.destinationFilePathTextBox.TabIndex = 6;
             // 
             // inputFileGroupbox
@@ -152,9 +160,11 @@
             this.inputFileGroupbox.Controls.Add(this.titleInputLabel);
             this.inputFileGroupbox.Controls.Add(this.titleLabel);
             this.inputFileGroupbox.Controls.Add(this.artistLabel);
-            this.inputFileGroupbox.Location = new System.Drawing.Point(14, 188);
+            this.inputFileGroupbox.Location = new System.Drawing.Point(19, 231);
+            this.inputFileGroupbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.inputFileGroupbox.Name = "inputFileGroupbox";
-            this.inputFileGroupbox.Size = new System.Drawing.Size(309, 135);
+            this.inputFileGroupbox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.inputFileGroupbox.Size = new System.Drawing.Size(412, 166);
             this.inputFileGroupbox.TabIndex = 9;
             this.inputFileGroupbox.TabStop = false;
             this.inputFileGroupbox.Text = "Source File Information: ";
@@ -162,27 +172,30 @@
             // lengthInputLabel
             // 
             this.lengthInputLabel.AutoSize = true;
-            this.lengthInputLabel.Location = new System.Drawing.Point(63, 79);
+            this.lengthInputLabel.Location = new System.Drawing.Point(84, 97);
+            this.lengthInputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthInputLabel.Name = "lengthInputLabel";
-            this.lengthInputLabel.Size = new System.Drawing.Size(32, 13);
+            this.lengthInputLabel.Size = new System.Drawing.Size(38, 17);
             this.lengthInputLabel.TabIndex = 11;
             this.lengthInputLabel.Text = "xxxxx";
             // 
             // lengthLabel
             // 
             this.lengthLabel.AutoSize = true;
-            this.lengthLabel.Location = new System.Drawing.Point(6, 79);
+            this.lengthLabel.Location = new System.Drawing.Point(8, 97);
+            this.lengthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthLabel.Name = "lengthLabel";
-            this.lengthLabel.Size = new System.Drawing.Size(62, 13);
+            this.lengthLabel.Size = new System.Drawing.Size(82, 17);
             this.lengthLabel.TabIndex = 11;
             this.lengthLabel.Text = "File Length:";
             // 
             // feedBackLabel2
             // 
             this.feedBackLabel2.AutoSize = true;
-            this.feedBackLabel2.Location = new System.Drawing.Point(6, 114);
+            this.feedBackLabel2.Location = new System.Drawing.Point(8, 140);
+            this.feedBackLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.feedBackLabel2.Name = "feedBackLabel2";
-            this.feedBackLabel2.Size = new System.Drawing.Size(62, 13);
+            this.feedBackLabel2.Size = new System.Drawing.Size(81, 17);
             this.feedBackLabel2.TabIndex = 12;
             this.feedBackLabel2.Text = "Percentage";
             this.feedBackLabel2.Visible = false;
@@ -190,53 +203,59 @@
             // feedBackLabel
             // 
             this.feedBackLabel.AutoSize = true;
-            this.feedBackLabel.Location = new System.Drawing.Point(6, 101);
+            this.feedBackLabel.Location = new System.Drawing.Point(8, 124);
+            this.feedBackLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.feedBackLabel.Name = "feedBackLabel";
-            this.feedBackLabel.Size = new System.Drawing.Size(61, 13);
+            this.feedBackLabel.Size = new System.Drawing.Size(79, 17);
             this.feedBackLabel.TabIndex = 11;
             this.feedBackLabel.Text = "Encoding...";
             this.feedBackLabel.Visible = false;
             // 
             // artistInputLabel
             // 
-            this.artistInputLabel.Location = new System.Drawing.Point(36, 16);
+            this.artistInputLabel.Location = new System.Drawing.Point(48, 20);
+            this.artistInputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artistInputLabel.Name = "artistInputLabel";
-            this.artistInputLabel.Size = new System.Drawing.Size(267, 26);
+            this.artistInputLabel.Size = new System.Drawing.Size(356, 32);
             this.artistInputLabel.TabIndex = 3;
             this.artistInputLabel.Text = "xxxxx";
             // 
             // titleInputLabel
             // 
-            this.titleInputLabel.Location = new System.Drawing.Point(36, 46);
+            this.titleInputLabel.Location = new System.Drawing.Point(48, 57);
+            this.titleInputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleInputLabel.Name = "titleInputLabel";
-            this.titleInputLabel.Size = new System.Drawing.Size(267, 27);
+            this.titleInputLabel.Size = new System.Drawing.Size(356, 33);
             this.titleInputLabel.TabIndex = 2;
             this.titleInputLabel.Text = "xxxxx";
             // 
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Location = new System.Drawing.Point(6, 46);
+            this.titleLabel.Location = new System.Drawing.Point(8, 57);
+            this.titleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(30, 13);
+            this.titleLabel.Size = new System.Drawing.Size(39, 17);
             this.titleLabel.TabIndex = 1;
             this.titleLabel.Text = "Title:";
             // 
             // artistLabel
             // 
             this.artistLabel.AutoSize = true;
-            this.artistLabel.Location = new System.Drawing.Point(6, 16);
+            this.artistLabel.Location = new System.Drawing.Point(8, 20);
+            this.artistLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artistLabel.Name = "artistLabel";
-            this.artistLabel.Size = new System.Drawing.Size(33, 13);
+            this.artistLabel.Size = new System.Drawing.Size(44, 17);
             this.artistLabel.TabIndex = 0;
             this.artistLabel.Text = "Artist:";
             // 
             // encodeButton
             // 
             this.encodeButton.Enabled = false;
-            this.encodeButton.Location = new System.Drawing.Point(199, 345);
+            this.encodeButton.Location = new System.Drawing.Point(265, 425);
+            this.encodeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.encodeButton.Name = "encodeButton";
-            this.encodeButton.Size = new System.Drawing.Size(80, 26);
+            this.encodeButton.Size = new System.Drawing.Size(107, 32);
             this.encodeButton.TabIndex = 10;
             this.encodeButton.Text = "Split MP3 File";
             this.encodeButton.UseVisualStyleBackColor = true;
@@ -254,9 +273,11 @@
             this.groupBox1.Controls.Add(this.deleteButton);
             this.groupBox1.Controls.Add(this.fileNameOutputBox);
             this.groupBox1.Controls.Add(this.fileNameLabel);
-            this.groupBox1.Location = new System.Drawing.Point(343, 52);
+            this.groupBox1.Location = new System.Drawing.Point(457, 64);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 134);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(333, 165);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Output File: ";
@@ -264,72 +285,80 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 20);
+            this.label1.Location = new System.Drawing.Point(67, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(66, 17);
             this.label1.TabIndex = 32;
             this.label1.Text = "Min : Sec";
             // 
             // endSecTextBox
             // 
             this.endSecTextBox.Enabled = false;
-            this.endSecTextBox.Location = new System.Drawing.Point(78, 59);
+            this.endSecTextBox.Location = new System.Drawing.Point(104, 73);
+            this.endSecTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.endSecTextBox.Name = "endSecTextBox";
-            this.endSecTextBox.Size = new System.Drawing.Size(31, 20);
+            this.endSecTextBox.Size = new System.Drawing.Size(40, 22);
             this.endSecTextBox.TabIndex = 31;
             this.endSecTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // endMinTextBox
             // 
             this.endMinTextBox.Enabled = false;
-            this.endMinTextBox.Location = new System.Drawing.Point(41, 59);
+            this.endMinTextBox.Location = new System.Drawing.Point(55, 73);
+            this.endMinTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.endMinTextBox.Name = "endMinTextBox";
-            this.endMinTextBox.Size = new System.Drawing.Size(31, 20);
+            this.endMinTextBox.Size = new System.Drawing.Size(40, 22);
             this.endMinTextBox.TabIndex = 30;
             this.endMinTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // startSecTextBox
             // 
             this.startSecTextBox.Enabled = false;
-            this.startSecTextBox.Location = new System.Drawing.Point(78, 35);
+            this.startSecTextBox.Location = new System.Drawing.Point(104, 43);
+            this.startSecTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startSecTextBox.Name = "startSecTextBox";
-            this.startSecTextBox.Size = new System.Drawing.Size(31, 20);
+            this.startSecTextBox.Size = new System.Drawing.Size(40, 22);
             this.startSecTextBox.TabIndex = 29;
             this.startSecTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // startMinTextBox
             // 
             this.startMinTextBox.Enabled = false;
-            this.startMinTextBox.Location = new System.Drawing.Point(41, 35);
+            this.startMinTextBox.Location = new System.Drawing.Point(55, 43);
+            this.startMinTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startMinTextBox.Name = "startMinTextBox";
-            this.startMinTextBox.Size = new System.Drawing.Size(31, 20);
+            this.startMinTextBox.Size = new System.Drawing.Size(40, 22);
             this.startMinTextBox.TabIndex = 28;
             this.startMinTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // endLabel
             // 
             this.endLabel.AutoSize = true;
-            this.endLabel.Location = new System.Drawing.Point(14, 62);
+            this.endLabel.Location = new System.Drawing.Point(19, 76);
+            this.endLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.endLabel.Name = "endLabel";
-            this.endLabel.Size = new System.Drawing.Size(26, 13);
+            this.endLabel.Size = new System.Drawing.Size(33, 17);
             this.endLabel.TabIndex = 27;
             this.endLabel.Text = "End";
             // 
             // startLabel
             // 
             this.startLabel.AutoSize = true;
-            this.startLabel.Location = new System.Drawing.Point(11, 38);
+            this.startLabel.Location = new System.Drawing.Point(15, 47);
+            this.startLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.startLabel.Name = "startLabel";
-            this.startLabel.Size = new System.Drawing.Size(29, 13);
+            this.startLabel.Size = new System.Drawing.Size(38, 17);
             this.startLabel.TabIndex = 26;
             this.startLabel.Text = "Start";
             // 
             // deleteButton
             // 
             this.deleteButton.Enabled = false;
-            this.deleteButton.Location = new System.Drawing.Point(140, 35);
+            this.deleteButton.Location = new System.Drawing.Point(187, 43);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(71, 24);
+            this.deleteButton.Size = new System.Drawing.Size(95, 30);
             this.deleteButton.TabIndex = 25;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -338,27 +367,30 @@
             // fileNameOutputBox
             // 
             this.fileNameOutputBox.Enabled = false;
-            this.fileNameOutputBox.Location = new System.Drawing.Point(10, 103);
+            this.fileNameOutputBox.Location = new System.Drawing.Point(13, 127);
+            this.fileNameOutputBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fileNameOutputBox.Name = "fileNameOutputBox";
-            this.fileNameOutputBox.Size = new System.Drawing.Size(229, 20);
+            this.fileNameOutputBox.Size = new System.Drawing.Size(304, 22);
             this.fileNameOutputBox.TabIndex = 16;
             this.fileNameOutputBox.Leave += new System.EventHandler(this.Leave);
             // 
             // fileNameLabel
             // 
             this.fileNameLabel.AutoSize = true;
-            this.fileNameLabel.Location = new System.Drawing.Point(10, 87);
+            this.fileNameLabel.Location = new System.Drawing.Point(13, 107);
+            this.fileNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fileNameLabel.Name = "fileNameLabel";
-            this.fileNameLabel.Size = new System.Drawing.Size(57, 13);
+            this.fileNameLabel.Size = new System.Drawing.Size(75, 17);
             this.fileNameLabel.TabIndex = 15;
             this.fileNameLabel.Text = "File Name:";
             // 
             // fileLeftButton
             // 
             this.fileLeftButton.Enabled = false;
-            this.fileLeftButton.Location = new System.Drawing.Point(365, 15);
+            this.fileLeftButton.Location = new System.Drawing.Point(487, 18);
+            this.fileLeftButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fileLeftButton.Name = "fileLeftButton";
-            this.fileLeftButton.Size = new System.Drawing.Size(28, 26);
+            this.fileLeftButton.Size = new System.Drawing.Size(37, 32);
             this.fileLeftButton.TabIndex = 12;
             this.fileLeftButton.Text = "<<";
             this.fileLeftButton.Click += new System.EventHandler(this.fileLeftButton_Click);
@@ -366,9 +398,10 @@
             // fileRightButton
             // 
             this.fileRightButton.Enabled = false;
-            this.fileRightButton.Location = new System.Drawing.Point(399, 15);
+            this.fileRightButton.Location = new System.Drawing.Point(532, 18);
+            this.fileRightButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fileRightButton.Name = "fileRightButton";
-            this.fileRightButton.Size = new System.Drawing.Size(28, 26);
+            this.fileRightButton.Size = new System.Drawing.Size(37, 32);
             this.fileRightButton.TabIndex = 13;
             this.fileRightButton.Text = ">>";
             this.fileRightButton.Click += new System.EventHandler(this.fileRightButton_Click);
@@ -376,9 +409,10 @@
             // addFileButton
             // 
             this.addFileButton.Enabled = false;
-            this.addFileButton.Location = new System.Drawing.Point(433, 15);
+            this.addFileButton.Location = new System.Drawing.Point(577, 18);
+            this.addFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addFileButton.Name = "addFileButton";
-            this.addFileButton.Size = new System.Drawing.Size(28, 26);
+            this.addFileButton.Size = new System.Drawing.Size(37, 32);
             this.addFileButton.TabIndex = 14;
             this.addFileButton.Text = "+";
             this.addFileButton.Click += new System.EventHandler(this.addFileButton_Click);
@@ -386,9 +420,10 @@
             // editPositionLabel
             // 
             this.editPositionLabel.AutoSize = true;
-            this.editPositionLabel.Location = new System.Drawing.Point(470, 24);
+            this.editPositionLabel.Location = new System.Drawing.Point(627, 30);
+            this.editPositionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.editPositionLabel.Name = "editPositionLabel";
-            this.editPositionLabel.Size = new System.Drawing.Size(99, 13);
+            this.editPositionLabel.Size = new System.Drawing.Size(132, 17);
             this.editPositionLabel.TabIndex = 15;
             this.editPositionLabel.Text = "Editing Output File: ";
             // 
@@ -402,10 +437,11 @@
             this.gridtrackname,
             this.gridstarttime,
             this.gridendtime});
-            this.dataGridView1.Location = new System.Drawing.Point(608, 15);
+            this.dataGridView1.Location = new System.Drawing.Point(811, 18);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(315, 375);
+            this.dataGridView1.Size = new System.Drawing.Size(420, 462);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             this.dataGridView1.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewLeave);
@@ -453,9 +489,10 @@
             // btnAutoSplit
             // 
             this.btnAutoSplit.Enabled = false;
-            this.btnAutoSplit.Location = new System.Drawing.Point(45, 345);
+            this.btnAutoSplit.Location = new System.Drawing.Point(60, 425);
+            this.btnAutoSplit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAutoSplit.Name = "btnAutoSplit";
-            this.btnAutoSplit.Size = new System.Drawing.Size(75, 26);
+            this.btnAutoSplit.Size = new System.Drawing.Size(100, 32);
             this.btnAutoSplit.TabIndex = 17;
             this.btnAutoSplit.Text = "Auto Split";
             this.btnAutoSplit.UseVisualStyleBackColor = true;
@@ -472,82 +509,92 @@
             this.groupBox2.Controls.Add(this.artistOutputLabel);
             this.groupBox2.Controls.Add(this.titleOutputLabel);
             this.groupBox2.Controls.Add(this.albumOutputLabel);
-            this.groupBox2.Location = new System.Drawing.Point(343, 171);
+            this.groupBox2.Location = new System.Drawing.Point(457, 210);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 202);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(333, 249);
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
             // commentOutputTextBox
             // 
             this.commentOutputTextBox.Enabled = false;
-            this.commentOutputTextBox.Location = new System.Drawing.Point(10, 148);
+            this.commentOutputTextBox.Location = new System.Drawing.Point(13, 182);
+            this.commentOutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.commentOutputTextBox.Multiline = true;
             this.commentOutputTextBox.Name = "commentOutputTextBox";
-            this.commentOutputTextBox.Size = new System.Drawing.Size(229, 43);
+            this.commentOutputTextBox.Size = new System.Drawing.Size(304, 52);
             this.commentOutputTextBox.TabIndex = 40;
             this.commentOutputTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // commentOutputLabel
             // 
             this.commentOutputLabel.AutoSize = true;
-            this.commentOutputLabel.Location = new System.Drawing.Point(10, 134);
+            this.commentOutputLabel.Location = new System.Drawing.Point(13, 165);
+            this.commentOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.commentOutputLabel.Name = "commentOutputLabel";
-            this.commentOutputLabel.Size = new System.Drawing.Size(57, 13);
+            this.commentOutputLabel.Size = new System.Drawing.Size(75, 17);
             this.commentOutputLabel.TabIndex = 36;
             this.commentOutputLabel.Text = "Comment: ";
             // 
             // albumOutputTextBox
             // 
             this.albumOutputTextBox.Enabled = false;
-            this.albumOutputTextBox.Location = new System.Drawing.Point(10, 112);
+            this.albumOutputTextBox.Location = new System.Drawing.Point(13, 138);
+            this.albumOutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.albumOutputTextBox.Name = "albumOutputTextBox";
-            this.albumOutputTextBox.Size = new System.Drawing.Size(229, 20);
+            this.albumOutputTextBox.Size = new System.Drawing.Size(304, 22);
             this.albumOutputTextBox.TabIndex = 39;
             this.albumOutputTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // titleOutputTextBox
             // 
             this.titleOutputTextBox.Enabled = false;
-            this.titleOutputTextBox.Location = new System.Drawing.Point(10, 72);
+            this.titleOutputTextBox.Location = new System.Drawing.Point(13, 89);
+            this.titleOutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.titleOutputTextBox.Name = "titleOutputTextBox";
-            this.titleOutputTextBox.Size = new System.Drawing.Size(229, 20);
+            this.titleOutputTextBox.Size = new System.Drawing.Size(304, 22);
             this.titleOutputTextBox.TabIndex = 38;
             this.titleOutputTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // artistOutputTextBox
             // 
             this.artistOutputTextBox.Enabled = false;
-            this.artistOutputTextBox.Location = new System.Drawing.Point(10, 34);
+            this.artistOutputTextBox.Location = new System.Drawing.Point(13, 42);
+            this.artistOutputTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.artistOutputTextBox.Name = "artistOutputTextBox";
-            this.artistOutputTextBox.Size = new System.Drawing.Size(229, 20);
+            this.artistOutputTextBox.Size = new System.Drawing.Size(304, 22);
             this.artistOutputTextBox.TabIndex = 37;
             this.artistOutputTextBox.Leave += new System.EventHandler(this.Leave);
             // 
             // artistOutputLabel
             // 
             this.artistOutputLabel.AutoSize = true;
-            this.artistOutputLabel.Location = new System.Drawing.Point(10, 18);
+            this.artistOutputLabel.Location = new System.Drawing.Point(13, 22);
+            this.artistOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artistOutputLabel.Name = "artistOutputLabel";
-            this.artistOutputLabel.Size = new System.Drawing.Size(36, 13);
+            this.artistOutputLabel.Size = new System.Drawing.Size(48, 17);
             this.artistOutputLabel.TabIndex = 33;
             this.artistOutputLabel.Text = "Artist: ";
             // 
             // titleOutputLabel
             // 
             this.titleOutputLabel.AutoSize = true;
-            this.titleOutputLabel.Location = new System.Drawing.Point(10, 56);
+            this.titleOutputLabel.Location = new System.Drawing.Point(13, 69);
+            this.titleOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titleOutputLabel.Name = "titleOutputLabel";
-            this.titleOutputLabel.Size = new System.Drawing.Size(33, 13);
+            this.titleOutputLabel.Size = new System.Drawing.Size(43, 17);
             this.titleOutputLabel.TabIndex = 34;
             this.titleOutputLabel.Text = "Title: ";
             // 
             // albumOutputLabel
             // 
             this.albumOutputLabel.AutoSize = true;
-            this.albumOutputLabel.Location = new System.Drawing.Point(9, 96);
+            this.albumOutputLabel.Location = new System.Drawing.Point(12, 118);
+            this.albumOutputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.albumOutputLabel.Name = "albumOutputLabel";
-            this.albumOutputLabel.Size = new System.Drawing.Size(42, 13);
+            this.albumOutputLabel.Size = new System.Drawing.Size(55, 17);
             this.albumOutputLabel.TabIndex = 35;
             this.albumOutputLabel.Text = "Album: ";
             // 
@@ -555,12 +602,13 @@
             // 
             this.menu.Dock = System.Windows.Forms.DockStyle.None;
             this.menu.GripMargin = new System.Windows.Forms.Padding(0);
+            this.menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItemOptions});
-            this.menu.Location = new System.Drawing.Point(53, 364);
+            this.menu.Location = new System.Drawing.Point(71, 448);
             this.menu.Name = "menu";
             this.menu.Padding = new System.Windows.Forms.Padding(0);
-            this.menu.Size = new System.Drawing.Size(118, 24);
+            this.menu.Size = new System.Drawing.Size(145, 24);
             this.menu.TabIndex = 34;
             this.menu.Text = "menuStrip1";
             this.menu.Visible = false;
@@ -571,7 +619,7 @@
             this.toolStripMenuItemSilence,
             this.toolStripMenuItemMinGap});
             this.ToolStripMenuItemOptions.Name = "ToolStripMenuItemOptions";
-            this.ToolStripMenuItemOptions.Size = new System.Drawing.Size(116, 24);
+            this.ToolStripMenuItemOptions.Size = new System.Drawing.Size(143, 24);
             this.ToolStripMenuItemOptions.Text = "Auto Split Options";
             // 
             // toolStripMenuItemSilence
@@ -579,13 +627,13 @@
             this.toolStripMenuItemSilence.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.silenceMenuItem});
             this.toolStripMenuItemSilence.Name = "toolStripMenuItemSilence";
-            this.toolStripMenuItemSilence.Size = new System.Drawing.Size(151, 22);
+            this.toolStripMenuItemSilence.Size = new System.Drawing.Size(178, 26);
             this.toolStripMenuItemSilence.Text = "Silence";
             // 
             // silenceMenuItem
             // 
             this.silenceMenuItem.Name = "silenceMenuItem";
-            this.silenceMenuItem.Size = new System.Drawing.Size(60, 23);
+            this.silenceMenuItem.Size = new System.Drawing.Size(60, 27);
             this.silenceMenuItem.Text = "2000";
             this.silenceMenuItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.objectIntOnly_KeyPress);
             this.silenceMenuItem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.silenceMenuItem_KeyUp);
@@ -595,22 +643,42 @@
             this.toolStripMenuItemMinGap.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.minGapMenuItem});
             this.toolStripMenuItemMinGap.Name = "toolStripMenuItemMinGap";
-            this.toolStripMenuItemMinGap.Size = new System.Drawing.Size(151, 22);
+            this.toolStripMenuItemMinGap.Size = new System.Drawing.Size(178, 26);
             this.toolStripMenuItemMinGap.Text = "Minimum Gap";
             // 
             // minGapMenuItem
             // 
             this.minGapMenuItem.Name = "minGapMenuItem";
-            this.minGapMenuItem.Size = new System.Drawing.Size(60, 23);
+            this.minGapMenuItem.Size = new System.Drawing.Size(60, 27);
             this.minGapMenuItem.Text = "480000";
             this.minGapMenuItem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.objectIntOnly_KeyPress);
             this.minGapMenuItem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.minGapMenuItem_KeyUp);
             // 
+            // btnSpliByStep
+            // 
+            this.btnSpliByStep.Location = new System.Drawing.Point(60, 464);
+            this.btnSpliByStep.Name = "btnSpliByStep";
+            this.btnSpliByStep.Size = new System.Drawing.Size(100, 35);
+            this.btnSpliByStep.TabIndex = 35;
+            this.btnSpliByStep.Text = "Split by step";
+            this.btnSpliByStep.UseVisualStyleBackColor = true;
+            this.btnSpliByStep.Click += new System.EventHandler(this.btnSpliByStep_Click);
+            // 
+            // splitStepTextBox
+            // 
+            this.splitStepTextBox.Location = new System.Drawing.Point(265, 464);
+            this.splitStepTextBox.Name = "splitStepTextBox";
+            this.splitStepTextBox.Size = new System.Drawing.Size(107, 22);
+            this.splitStepTextBox.TabIndex = 36;
+            this.splitStepTextBox.Text = "600";
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 396);
+            this.ClientSize = new System.Drawing.Size(1240, 578);
+            this.Controls.Add(this.splitStepTextBox);
+            this.Controls.Add(this.btnSpliByStep);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.dataGridView1);
@@ -629,9 +697,10 @@
             this.Controls.Add(this.btnAutoSplit);
             this.Controls.Add(this.encodeButton);
             this.MainMenuStrip = this.menu;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(948, 435);
-            this.MinimumSize = new System.Drawing.Size(948, 435);
+            this.MaximumSize = new System.Drawing.Size(1258, 625);
+            this.MinimumSize = new System.Drawing.Size(1258, 625);
             this.Name = "MainForm";
             this.Text = "Cold Cuts";
             this.Shown += new System.EventHandler(this.MainForm_Shown);
@@ -707,6 +776,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemMinGap;
         private System.Windows.Forms.ToolStripTextBox silenceMenuItem;
         private System.Windows.Forms.ToolStripTextBox minGapMenuItem;
+        private System.Windows.Forms.Button btnSpliByStep;
+        private System.Windows.Forms.TextBox splitStepTextBox;
     }
 }
 
